@@ -47,7 +47,7 @@ public class ArrayUtility<SomeType> {
     }
 
     public SomeType[] filter(Function<SomeType, Boolean> predicate) {
-        //return Arrays.stream(array).filter( predicate ).collect(Collectors.<SomeType>toList()).toArray();
-        return null;
+        return Arrays.stream(array).filter( predicate::apply ).toArray(size -> Arrays.copyOf(array, size));
+
     }
 }

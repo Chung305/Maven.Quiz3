@@ -7,4 +7,9 @@ public class PigLatinGenerator {
     public String translate(String str) {
         return null;
     }
+
+    public String shift(String str){
+        return null;
+
+    }
 }
